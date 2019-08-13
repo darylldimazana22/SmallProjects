@@ -1,2 +1,2 @@
 # SmallProjects
-My small projects made on my free time
+Some mini projects made on my free time
