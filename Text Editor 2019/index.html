@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <meta content='text/html;charset=utf-8' http-equiv='Content-Type'>
+    <script defer src="https://use.fontawesome.com/releases/v5.10.1/js/all.js" integrity="sha384-aC/bNmpJEYrEVX5KNHN+m0CmvycQX9wDnYv8X2gdXQjrbtDP5OcU5DRiXwL6bPwr" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='css/styles.css' />
+    <title>Simple Text Editor - Daryll Dimazana</title>
+</head>
+<body>
+    <div class='editor'>
+        <div class='editor-buttons'>
+            <div class='rel-div'>
+                    <button data-cmd='undo' title='Undo'><i class="fas fa-undo"></i></button>
+                    <button data-cmd='redo' title='Redo'><i class="fas fa-redo"></i></button>
+            </div>
+            <div class='rel-div vertical-line'>|</div>
+            <div class='rel-div'>
+                    <button data-cmd='bold' data-tag='b' title='Bold'><i class="fas fa-bold"></i></button>
+                    <button data-cmd='italic' data-tag='i' title='Italicize'><i class="fas fa-italic"></i></button>
+                    <button data-cmd='underline' data-tag='u' title='Underline'><i class="fas fa-underline"></i></button>
+                    <button data-cmd='strikeThrough' data-tag='strike' title='Strikethrough'><i class="fas fa-strikethrough"></i></button>
+            </div>
+            <div class='rel-div vertical-line'>|</div>
+            <div class='rel-div'>
+                    <button data-cmd='insertUnorderedList' data-tag='ul' title='Unordered List'><i class="fas fa-list"></i></button>
+                    <button data-cmd='insertOrderedList' data-tag='ol' title='Ordered List'><i class="fas fa-list-ol"></i></button>
+            </div>
+            <div class='rel-div'>
+                <button data-cmd='justifyLeft' data-tag='left' title='Justify Left'><i class="fas fa-align-left"></i></button>
+                <button data-cmd='justifyCenter' data-tag='center' title='Justify Center'><i class="fas fa-align-center"></i></button>
+                <button data-cmd='justifyRight' data-tag='right' title='Justify Right'><i class="fas fa-align-right"></i></button>
+                <button data-cmd='justifyFull' data-tag='justify' title='Justify Full'><i class="fas fa-align-justify"></i></button>
+            </div>
+            <div class='rel-div vertical-line'>|</div>
+            <div class='rel-div'>
+                <button data-cmd='indent' data-tag='blockquote' title='Indent'><i class="fas fa-indent"></i></button>
+                <button data-cmd='outdent' title='Outdent'><i class="fas fa-outdent"></i></button>
+            </div>
+            <div class='rel-div vertical-line'>|</div>
+            <div class='rel-div'>
+                <button data-cmd='subscript' data-tag='sub' title='Subscript'><i class="fas fa-subscript"></i></button>
+                <button data-cmd='superscript' data-tag='sup' title='Superscript'><i class="fas fa-superscript"></i></button>
+            </div>
+            <div class='rel-div vertical-line'>|</div>
+            <div class='rel-div'>
+                <button data-cmd='removeFormat' title='Remove Format'><i class="fas fa-remove-format"></i></button>
+            </div>
+        </div>
+
+        <div data-placeholder='Input your text here...' id='editor-text' class='editor-body' contenteditable='true' spellcheck='false'></div>
+    </div>
+
+    <script src='js/editor.js'></script>
+</body>
