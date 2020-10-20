@@ -1,0 +1,16 @@
+{
+  "name": "simple_twitter_bot_nodejs",
+  "version": "1.0.0",
+  "description": "Simple Twitter Bot NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "testbot"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "dotenv": "^8.2.0",
+    "twitter": "^1.7.1"
+  }
+}
