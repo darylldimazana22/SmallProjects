@@ -1,0 +1,37 @@
+body {
+    background: #5F4B8BFF;
+    color: #E69A8DFF;
+    font-family: Calibri;
+    padding: 30px;
+}
+
+#container {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.items {
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+.btn {
+    padding: 30px;
+    margin: 20px;
+    font-size: 40px;
+    height: 120px;
+    background: transparent;
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+#preview, #container a {
+    display: none;
+}

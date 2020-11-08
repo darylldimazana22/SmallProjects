@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Recorder - Daryll Dimazana</title>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="container">
+        <header> 
+            <h1>Audio Recorder</h1> 
+        </header> 
+
+        <!--button for 'start recording'--> 
+        <div class="items">
+            <p><input type="checkbox" id="autoDownload" checked> <label for="autoDownload">Automatically download audio recording</label></p>
+            <button id="btnStartStop" class="btn" title="Start Recording">&#9658</button> 
+        </div>
+            
+        <div id="preview" class="items">
+            <!--for record--> 
+            <audio controls hidden></audio> 
+
+            <p>Audio Preview: </p>
+
+            <!--for play the audio--> 
+            <audio id="audioPlay" controls></audio> 
+        </div>
+
+        <a id="downloadLink" download="audio_play.mp3" href=""></a> 
+    </div>
+</body>
+</html>
